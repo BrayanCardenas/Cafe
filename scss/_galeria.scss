@@ -36,5 +36,17 @@
         -moz-transition: opacity 450ms ease;
         -ms-transition: opacity 450ms ease;
         -o-transition: opacity 450ms ease;
+    }
 }
+
+@media screen and (max-width: 800px) {
+    .galeria{
+        width: 90%;
+        &__li{
+            width: 100%;
+        }
+        &__img{
+            width: 100%;
+        }
+    }
 }

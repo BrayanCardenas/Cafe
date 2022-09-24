@@ -41,15 +41,27 @@
         line-height: 1.5em;
     }
     &__name{
-        width: 90%;
+        width: 50%;
         font-size: 1.3em;
     }
     &__price{
-        width: 10%;
+        width: 20%;
         font-size: 1.3em;
         text-align: end;
     }
     &__description{
         opacity: .8;
+    }
+}
+@media screen and (max-width: 800px) {
+    .main{
+        width: 93%;
+        margin-top: 0;
+        &__carts{
+            @include flex(flex, column, nowrap, center, center);
+        }
+        &__food{
+            @include flex(flex, row, wrap, space-between, center);
+        }
     }
 }

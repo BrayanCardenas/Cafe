@@ -8,7 +8,7 @@
 // About
 
 .about{
-    width: 80%;
+    width: 90%;
     max-width: 59em;
     margin: auto;
     
@@ -42,6 +42,24 @@
     }
     &__parra{
         line-height: 1.5em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about{
+        &__relative{
+            position: static;
+        }
+        &__img{
+            position: relative;
+            width: 100%;
+        } 
+        &__article{
+            position: relative;
+            top: -3.12em;
+            left: 0;
+            width: 100%;
+        } 
     }
 }
 

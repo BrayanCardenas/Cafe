@@ -3,11 +3,8 @@
 @use '_about';
 @use '_main';
 @use '_galeria';
+@use '_location';
+@use '_map';
+@use '_footer';
 
-.location{
-    width: 90%;
-    max-width: 50em;
-    margin: auto;
-    overflow: hidden;
-}
 
