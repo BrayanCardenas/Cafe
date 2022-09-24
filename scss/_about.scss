@@ -1,0 +1,47 @@
+@mixin flex ($dis, $direction, $corte, $just, $align ) {
+    display: $dis;
+    flex-flow:  $direction $corte;
+    justify-content: $just;
+    align-items: $align;
+}
+
+// About
+
+.about{
+    width: 80%;
+    max-width: 59em;
+    margin: auto;
+    
+    &__relative{
+        position: relative;
+   }
+    &__img{
+        position: absolute;
+        top: -3.12em;
+        left: 0;
+        width: 80%;
+        height: 380px;
+        z-index: 0;
+        background: violet;
+        box-shadow: 0 0 .9em rgba(#000000,.35);
+    }
+    &__article{
+        position: relative;
+        top: 10.25em;
+        left: 50%;
+        @include flex(flex, column, nowrap, center, flex-start);
+        gap: 2em;
+        width: 50%;
+        padding: 2.5em 2em;
+        z-index: 1;
+        background: var(--blanco);
+        box-shadow: 0 0 .9em rgba(#000000,.35);
+    }
+    &__title{
+        font-size: 2.5em;
+    }
+    &__parra{
+        line-height: 1.5em;
+    }
+}
+

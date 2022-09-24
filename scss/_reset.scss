@@ -12,6 +12,8 @@
 /* Aquí definimos las Custom properties */
 :root{
     --negro         : #393939;
+    --blanco        : #f9f9f9;
+    --cafe          : #6e5228;
     
     /* Tipografía */
     --tipo-principal   : Helvetica, Arial, sans-serif;
@@ -20,9 +22,10 @@
     
   /* Las adaptamos al modo oscuro */
   @media (prefers-color-scheme: dark) {
-    :root{
-        --negro         : #ececec;
-    }
+    /* :root{
+        --negro         : #f4f4f4;
+        --blanco        : #1a1a1a;
+    } */
   }
   
   /* Opcional */
@@ -136,7 +139,7 @@
     font-size   : 100%;
     font-family : var(--tipo-principal);
     color       : var(--negro);
-    /* opcional */ line-height: 1.4em;
+    /* opcional */ /* line-height: 1.4em; */
     /* opcional */ hyphens: auto;
     /* opcional */ font-smooth: always;
     /* opcional */ -webkit-font-smoothing: antialiased;

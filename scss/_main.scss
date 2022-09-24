@@ -1,0 +1,55 @@
+@mixin flex ($dis, $direction, $corte, $just, $align ) {
+    display: $dis;
+    flex-flow:  $direction $corte;
+    justify-content: $just;
+    align-items: $align;
+}
+
+// Main
+
+.main{
+    margin: 11em auto 2.5em;
+    width: 80%;
+    max-width: 59em;
+    padding: .5em;
+
+    &__title{
+        margin: .5em 0 1.2em;
+        font-size: 2em;
+        text-align: center
+    }
+    &__carts, &__carts{
+        @include flex(flex, row, nowrap, center, center);
+        width: 99.5%;
+        padding: .5em;
+        border: 1px double var(--negro);
+    }
+    &__article{
+        padding: 1.5em;
+    }
+    &__category{
+        margin: .5em 0 2em;
+        font-size: 1.4em;
+        font-weight: bold;
+        text-align: center;
+    }
+    &__food{
+        @include flex(flex, row, wrap, space-between, center);
+        margin-bottom: 1.8em;
+        padding-bottom: 1em;
+        border-bottom: .3em dotted var(--negro);
+        line-height: 1.5em;
+    }
+    &__name{
+        width: 90%;
+        font-size: 1.3em;
+    }
+    &__price{
+        width: 10%;
+        font-size: 1.3em;
+        text-align: end;
+    }
+    &__description{
+        opacity: .8;
+    }
+}

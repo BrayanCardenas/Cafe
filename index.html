@@ -9,46 +9,121 @@
     <title>Cafe</title>
 </head>
 <body>
-    <header>
-        <div class="contenedor">
-            <nav class="nav">
-                <ul>
-                    <li><a href="#" id="btn-acerca-de">Acerca de</a></li>
-                    <li><a href="#" id="btn-menu">Menú</a></li>
-                    <li><a href="#" id="btn-galeria">Galería</a></li>
-                    <li><a href="#" id="btn-ubicacion"></a>Ubicación</li>
-                </ul>
-            </nav>
-            <div class="">
-                <h1>Café <span>Falcon Master</span> </h1>
-                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-            </div>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li class="header__li"><a href="#" id="btn--acerca">Acerca de</a></li>
+                <li class="header__li"><a href="#" id="btn--menu">Menú</a></li>
+                <li class="header__li"><a href="#" id="btn--aleria">Galería</a></li>
+                <li class="header__li"><a href="#" id="btn--bicacion"></a>Ubicación</li>
+            </ul>
+        </nav>
+        <div class="header__text">
+            <h1 class="header__title">Café <span>Falcon Master</span> </h1>
+            <h2 class="header__parra">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
         </div>
     </header>
 
-    <section class="acerca-de" id="acerca-de">
-        <div class="contenedor">
-            <div class="foto">
-                <img src="" alt="">
-            </div>
-            <article>
-                <h3>Acerca de</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor praesentium aperiam veniam delectus cumque ea nesciunt vitae deserunt rem eligendi, architecto accusantium, neque amet, nisi repellendus tempora ab quidem corporis?</p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora animi voluptate porro harum corporis similique corrupti est odit, inventore itaque ullam blanditiis accusantium quas iste iusto ratione vero iure ducimus nobis consequatur, nihil magni! Sed nostrum magni ad placeat excepturi.
+    <section class="about" id="acerca">
+        <div class="about__relative">
+            <img class="about__img" src="" alt="">
+            <article class="about__article">
+                <h2 class="about__title">Acerca de</h2>
+                <p class="about__parra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor praesentium veniam delectus</p>
+                <p class="about__parra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora animi voluptate porro harum corporis similique corrupti est odit, inventore itaque ullam blanditiis</p>
+               
             </article>
         </div>
     </section>
 
-    <section class="menu" id="menu">
-        <section></section>
+    <section class="main" id="main">
+        <h2 class="main__title" id="main">Menú</h2>
+        <div class="main__carts">
+            <div class="main__carts">
+                <article class="main__article">
+                    <p class="main__category">De Comer</p>
+                    <div class="main__food">
+                        <p class="main__name">dolor sit amet</p>
+                        <p class="main__price">$10</p>
+                        <p class="main__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, rem?</p>
+                    </div>
+                    <div class="main__food">
+                        <p class="main__name">Comida Dos</p>
+                        <p class="main__price">$15</p>
+                        <p class="main__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, rem?</p>
+                    </div>
+                    <div class="main__food">
+                        <p class="main__name">Comida Tres</p>
+                        <p class="main__price">$18</p>
+                        <p class="main__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, rem?</p>
+                    </div>
+                    <div class="main__food">
+                        <p class="main__name">Comida Cuatro</p>
+                        <p class="main__price">$22</p>
+                        <p class="main__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, rem?</p>
+                    </div>
+                </article>
+                <article class="main__article">
+                    <p class="main__category">De Tomar</p>
+                    <div class="main__food">
+                        <p class="main__name">Bebida Uno</p>
+                        <p class="main__price">$10</p>
+                        <p class="main__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, rem?</p>
+                    </div>
+                    <div class="main__food">
+                        <p class="main__name">Bebida Dos</p>
+                        <p class="main__price">$10</p>
+                        <p class="main__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, rem?</p>
+                    </div>
+                    <div class="main__food">
+                        <p class="main__name">Bebida Tres</p>
+                        <p class="main__price">$10</p>
+                        <p class="main__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, rem?</p>
+                    </div>
+                    <div class="main__food">
+                        <p class="main__name">Bebida Cuatro</p>
+                        <p class="main__price">$10</p>
+                        <p class="main__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, rem?</p>
+                    </div>
+                </article>
+            </div>
+            
+        </div>
     </section>
 
     <section class="galeria" id="galeria">
-        <section></section>
+        <ul >
+            <li class="galeria__li"><img class="galeria__img" src="" alt="img"></li>
+            <li class="galeria__li"><img class="galeria__img" src="" alt="img"></li>
+            <li class="galeria__li"><img class="galeria__img" src="" alt="img"></li>
+            <li class="galeria__li"><img class="galeria__img" src="" alt="img"></li>
+            <li class="galeria__li"><img class="galeria__img" src="" alt="img"></li>
+            <li class="galeria__li"><img class="galeria__img" src="" alt="img"></li>
+            <li class="galeria__li"><img class="galeria__img" src="" alt="img"></li>
+            <li class="galeria__li"><img class="galeria__img" src="" alt="img"></li>
+        </ul>
     </section>
 
-    <section class="ubicacion" id="ubicacion">
-        <section></section>
+    <section class="location" id="ubicacion">
+        <h2 class="location__title">Ubicación</h2>
+        <div class="direction">
+            <p>2915 Primrose Lane <br> Anaheim, CA 92806</p>
+            <p>(503) 400-6548</p>
+            <p>correo@correo.com</p>
+        </div>
+        <div class="location__schedule">
+            <h3>Horarios</h3>
+            <p>Lunea a Viernes <br> 8:00am - 9:00pm</p>
+            <p>Sabados y Domingos <br> 11:00am - 10:00pm</p>
+        </div>
     </section>
+
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5564.174387572981!2d24.1389210216572!3d45.78948085531831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474c678947a3d9d5%3A0xde4e7077b541b1be!2sGr%C4%83dina%20Restaurant!5e0!3m2!1ses-419!2sco!4v1663972014107!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <p>Copyright Brayan Cardenas</p>
+    </footer>
 </body>
 </html>

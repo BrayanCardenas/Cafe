@@ -1,0 +1,50 @@
+@mixin flex ($dis, $direction, $corte, $just, $align ) {
+    display: $dis;
+    flex-flow:  $direction $corte;
+    justify-content: $just;
+    align-items: $align;
+}
+// Header
+
+.header{
+    width: 100%;
+    height: 700px;
+    padding-top: 1em;
+    background: var(--cafe) url();
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+    
+
+    &__nav{
+        margin: auto;
+        width: 100%;
+        max-width: 50em;
+    }
+    &__ul{
+        @include flex(flex, row, nowrap, end, center );
+        color: var(--blanco);
+        gap: 2em;
+    }
+
+    &__text{
+        @include flex(flex, column, nowrap, center, center);
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: var(--blanco);
+    }
+
+    &__title {
+        font-size: 3.12em;
+    }
+    &__parra {
+        font-size: 1.5em;
+        opacity: .5;
+        font-style: italic;
+    }
+    & span {
+        opacity: .5;
+    }
+}
