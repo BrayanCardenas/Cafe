@@ -12,7 +12,7 @@
     width: 100%;
     max-width: 90em;
     height: 100vh;
-    background: var(--cafe) url();
+    background: url(/img/header.png);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -26,7 +26,9 @@
         color: var(--blanco);
         gap: 2em;
     }
-
+    &__li{
+        position: relative;
+    }
     &__text{
         @include flex(flex, column, nowrap, center, center);
         width: 100%;
@@ -44,7 +46,7 @@
         font-style: italic;
     }
     & span {
-        opacity: .5;
+        opacity: .8;
     }
 }
 
