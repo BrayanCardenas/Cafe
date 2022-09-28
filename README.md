@@ -4,4 +4,4 @@
 ## https://brayancardenas.github.io/cafe/
 
 ## Descripción
-Este proyecto fue creado con HTML, CSS, JavaScript además de poner en práctica la metodología BEM
+Este proyecto fue creado con HTML, Scss, JavaScript además de poner en práctica la metodología BEM
